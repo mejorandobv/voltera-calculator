@@ -6,10 +6,10 @@ import { WebHero } from './WebHero'
 import { Step2EnergyProfile } from './Step2-EnergyProfile'
 import { Step3OptimalSituation } from './Step3-OptimalSituation'
 import { Step4BatteryComparison } from './Step4-BatteryComparison'
-import { Step5SavingsAnalysis } from './Step5-SavingsAnalysis'
-import { Step7ServiceGuarantees } from './Step7-ServiceGuarantees'
-import { Step8FinanceOptions } from './Step8-FinanceOptions'
-import { Step9Confirmation } from './Step9-Confirmation'
+import { Step5EnergySystem } from './Step5-EnergySystem'
+import { Step6ServiceGuarantees } from './Step6-ServiceGuarantees'
+import { Step7FinanceOptions } from './Step7-FinanceOptions'
+import { Step8Confirmation } from './Step8-Confirmation'
 
 interface ThuisbatterijCheckoutProps {
   quoteId: string
@@ -56,6 +56,12 @@ export function ThuisbatterijCheckout({ quoteId }: ThuisbatterijCheckoutProps) {
     }
   }
   
+  const handleStepNavigation = (step: number) => {
+    if (step <= currentStep) {
+      setCurrentStep(step)
+    }
+  }
+  
   if (loading) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
@@ -78,7 +84,7 @@ export function ThuisbatterijCheckout({ quoteId }: ThuisbatterijCheckoutProps) {
           </p>
           <a 
             href="/"
-            className="inline-block bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition-colors"
+            className="inline-block bg-green-600 text-black px-6 py-2 rounded-lg hover:bg-green-700 transition-colors"
           >
             Terug naar homepage
           </a>
@@ -90,28 +96,34 @@ export function ThuisbatterijCheckout({ quoteId }: ThuisbatterijCheckoutProps) {
   const stepProps = {
     quote: quoteData,
     onNext: handleNext,
-    onBack: handleBack
+    onBack: handleBack,
+    currentStep,
+    onStepNavigation: handleStepNavigation
   }
   
-  // Render de juiste stap
-  switch (currentStep) {
-    case 1:
-      return <WebHero {...stepProps} />
-    case 2:
-      return <Step2EnergyProfile {...stepProps} />
-    case 3:
-      return <Step3OptimalSituation {...stepProps} />
-    case 4:
-      return <Step4BatteryComparison {...stepProps} />
-    case 5:
-      return <Step5SavingsAnalysis {...stepProps} />
-    case 6:
-      return <Step7ServiceGuarantees {...stepProps} />
-    case 7:
-      return <Step8FinanceOptions {...stepProps} />
-    case 8:
-      return <Step9Confirmation {...stepProps} />
-    default:
-      return <WebHero {...stepProps} />
+  // Render component based on step
+  const renderCurrentStep = () => {
+    switch (currentStep) {
+      case 1:
+        return <WebHero {...stepProps} />
+      case 2:
+        return <Step2EnergyProfile {...stepProps} />
+      case 3:
+        return <Step3OptimalSituation {...stepProps} />
+      case 4:
+        return <Step4BatteryComparison {...stepProps} />
+      case 5:
+        return <Step5EnergySystem {...stepProps} />
+      case 6:
+        return <Step6ServiceGuarantees {...stepProps} />
+      case 7:
+        return <Step7FinanceOptions {...stepProps} />
+      case 8:
+        return <Step8Confirmation {...stepProps} />
+      default:
+        return <WebHero {...stepProps} />
+    }
   }
+
+  return renderCurrentStep()
 }
