@@ -1,0 +1,75 @@
+{
+  "viewport": {
+    "width": 1708,
+    "height": 1337
+  },
+  "mainLayout": {
+    "type": "flex",
+    "direction": "row",
+    "containerMaxWidth": "1350px",
+    "padding": "16px",
+    "sidebarWidth": "310px",
+    "mainContentWidth": "calc(100% - 310px)"
+  },
+  "grid": {
+    "columns": "3",
+    "columnWidth": "261px",
+    "gap": "40px",
+    "breakpoint": "lg"
+  },
+  "spacing": {
+    "scale": [0, 1, 5, 8, 12, 16, 20, 24, 28, 32, 40, 64],
+    "unit": "px"
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px",
+    "2xl": "1536px"
+  },
+  "components": {
+    "sidebar": {
+      "width": "310px",
+      "backgroundColor": "#ffffff",
+      "borderRadius": "0px",
+      "padding": "0px"
+    },
+    "progressBar": {
+      "height": "4px",
+      "backgroundColor": "primary",
+      "borderRadius": "2px"
+    },
+    "navigationItem": {
+      "height": "44px",
+      "padding": "12px 16px",
+      "gap": "12px"
+    },
+    "ratingCard": {
+      "height": "56px",
+      "padding": "16px 24px",
+      "borderRadius": "8px"
+    },
+    "contentCard": {
+      "maxWidth": "385px",
+      "padding": "20px 0px",
+      "gap": "24px"
+    },
+    "primaryButton": {
+      "height": "48px",
+      "borderRadius": "6px",
+      "padding": "12px 24px",
+      "fontSize": "16px"
+    }
+  },
+  "zIndex": {
+    "base": "0",
+    "dropdown": "1000",
+    "sticky": "1020",
+    "fixed": "1030",
+    "modalBackdrop": "1040",
+    "modal": "1050",
+    "popover": "1060",
+    "tooltip": "1070"
+  }
+}

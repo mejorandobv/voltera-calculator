@@ -1,0 +1,76 @@
+{
+  "components": [
+    {
+      "name": "Sidebar",
+      "type": "navigation",
+      "selector": ".sidebar",
+      "props": {
+        "logo": true,
+        "progressBar": true,
+        "navigationItems": 6,
+        "printAction": true
+      }
+    },
+    {
+      "name": "ProgressIndicator",
+      "type": "progress",
+      "props": {
+        "percentage": 12,
+        "steps": "1 / 6"
+      }
+    },
+    {
+      "name": "StepNavigation",
+      "type": "navigation",
+      "props": {
+        "items": [
+          { "number": 1, "text": "Welkom", "active": true },
+          { "number": 2, "text": "Advies", "active": false },
+          { "number": 3, "text": "Besparing", "active": false },
+          { "number": 4, "text": "Garantie", "active": false },
+          { "number": 5, "text": "Slim systeem", "active": false },
+          { "number": 6, "text": "Uw aanbod", "active": false }
+        ]
+      }
+    },
+    {
+      "name": "RatingCard",
+      "type": "card",
+      "props": {
+        "rating": 9.4,
+        "reviews": 1166,
+        "location": "Woudrichem",
+        "address": "Steurstraat 44"
+      }
+    },
+    {
+      "name": "WelcomeCard",
+      "type": "content",
+      "props": {
+        "greeting": true,
+        "paragraphs": 3,
+        "signature": true,
+        "contactLinks": true,
+        "advisorImage": true
+      }
+    },
+    {
+      "name": "PrimaryButton",
+      "type": "button",
+      "props": {
+        "variant": "primary",
+        "fullWidth": true,
+        "icon": "arrow-right"
+      }
+    }
+  ],
+  "assets": {
+    "images": [
+      { "name": "brand-logo", "placeholder": "brand-logo-placeholder.svg", "originalUrl": "https://assets.zonneplan.nl/logo/zonneplan-logo-green.svg" },
+      { "name": "star-rating", "placeholder": "star-icon.svg", "originalUrl": "https://mijn.zonneplan.nl/images/icons/star-rating.svg" },
+      { "name": "star-rating-half", "placeholder": "star-half-icon.svg", "originalUrl": "https://mijn.zonneplan.nl/images/icons/star-rating-half.svg" },
+      { "name": "printer-icon", "placeholder": "printer-icon.svg", "originalUrl": "https://mijn.zonneplan.nl/images/icons/printer.svg" },
+      { "name": "advisor-photo", "placeholder": "advisor-placeholder.jpg", "originalUrl": "https://s3-eu-west-1.amazonaws.com/zonneplan/employee/s4Ra0geVfFUIToZCa4rElVpzUpROD3XXSjLXFwUM.png" }
+    ]
+  }
+}

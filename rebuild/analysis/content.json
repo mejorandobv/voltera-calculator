@@ -1,0 +1,67 @@
+{
+  "content": [
+    {
+      "type": "greeting",
+      "text": "Beste meneer Ketelaars,",
+      "selector": "div.text-midnight-black"
+    },
+    {
+      "type": "paragraph",
+      "text": "Op basis van uw situatie heb ik een voorstel opgesteld voor een thuisbatterij die naadloos aansluit op uw zonnepanelensysteem en energieverbruik. Zo bespaart u slim én profiteert u van extra opbrengsten.",
+      "selector": "p.mb-6"
+    },
+    {
+      "type": "paragraph",
+      "text": "Klik op 'Volgende' om te zien welke thuisbatterij het beste past bij uw situatie.",
+      "selector": "p.mb-6"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vragen of iets wijzigen? Bel of mail mij gerust.",
+      "selector": "p.mb-6",
+      "links": [
+        { "text": "Bel", "href": "tel:088 020 3002" },
+        { "text": "mail", "href": "mailto:mark.vuursteen@zonneplan.nl" }
+      ]
+    },
+    {
+      "type": "signature",
+      "text": "Met vriendelijke groet,\nMark Vuursteen",
+      "selector": "div.block.mt-2"
+    },
+    {
+      "type": "navigation",
+      "items": [
+        { "number": "1", "text": "Welkom", "active": true },
+        { "number": "2", "text": "Advies" },
+        { "number": "3", "text": "Besparing" },
+        { "number": "4", "text": "Garantie" },
+        { "number": "5", "text": "Slim systeem" },
+        { "number": "6", "text": "Uw aanbod" }
+      ]
+    },
+    {
+      "type": "rating",
+      "score": "9.4",
+      "count": "1166",
+      "location": "Woudrichem",
+      "address": "Steurstraat 44, Woudrichem"
+    },
+    {
+      "type": "progress",
+      "percentage": "12%",
+      "step": "1 / 6"
+    },
+    {
+      "type": "cta",
+      "text": "Volgende",
+      "primary": true,
+      "href": "https://mijn.zonneplan.nl/aanbieding/68AC2050EACC98.0137783968/advies"
+    },
+    {
+      "type": "secondary-action",
+      "text": "Afdrukken",
+      "href": "https://mijn.zonneplan.nl/aanbieding/68AC2050EACC98.0137783968/download"
+    }
+  ]
+}

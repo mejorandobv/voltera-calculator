@@ -1,0 +1,23 @@
+{
+  "images": [
+    {
+      "originalUrl": "https://assets.zonneplan.nl/logo/zonneplan-logo-green.svg",
+      "placeholderPath": "./brand-logo-placeholder.svg",
+      "width": 150,
+      "height": 40
+    },
+    {
+      "originalUrl": "https://mijn.zonneplan.nl/images/icons/star-rating.svg",
+      "placeholderPath": "./star-icon.svg",
+      "width": 14,
+      "height": 14
+    },
+    {
+      "originalUrl": "https://s3-eu-west-1.amazonaws.com/zonneplan/employee/s4Ra0geVfFUIToZCa4rElVpzUpROD3XXSjLXFwUM.png",
+      "placeholderPath": "./advisor-placeholder.jpg",
+      "width": 200,
+      "height": 200,
+      "type": "advisor-photo"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- V -->
+  <path d="M10 15 L20 45 L30 15 L25 15 L20 35 L15 15 Z" fill="#6BCF44"/>
+  
+  <!-- O with lightning bolt -->
+  <g>
+    <circle cx="45" cy="30" r="12" fill="none" stroke="#B4E665" stroke-width="3"/>
+    <path d="M45 20 L42 32 L48 32 L45 40" fill="none" stroke="#6BCF44" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- L -->
+  <path d="M65 15 L65 40 L80 40 L80 35 L70 35 L70 15 Z" fill="#6BCF44"/>
+  
+  <!-- T -->
+  <path d="M85 15 L105 15 L105 20 L97.5 20 L97.5 45 L92.5 45 L92.5 20 L85 20 Z" fill="#6BCF44"/>
+  
+  <!-- E -->
+  <path d="M110 15 L110 45 L125 45 L125 40 L115 40 L115 32.5 L123 32.5 L123 27.5 L115 27.5 L115 20 L125 20 L125 15 Z" fill="#6BCF44"/>
+  
+  <!-- R -->
+  <path d="M130 15 L130 45 L135 45 L135 32 L140 32 L145 45 L150 45 L145 30 C147 29 148 27 148 24 C148 19 144 15 139 15 Z M135 20 L139 20 C141 20 143 21 143 24 C143 27 141 28 139 28 L135 28 Z" fill="#6BCF44"/>
+  
+  <!-- A -->
+  <path d="M155 45 L162 15 L168 15 L175 45 L170 45 L168.5 37 L161.5 37 L160 45 Z M163 32 L167 32 L165 22 Z" fill="#6BCF44"/>
+</svg>

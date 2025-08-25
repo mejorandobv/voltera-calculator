@@ -1,0 +1,9 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="star-fill-75" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="75%" style="stop-color:#FFB800;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#E5E7EB;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <path d="M8 1.5L9.79611 6.02786H14.5106L10.7573 8.69427L12.5534 13.2221L8 10.3557L3.44658 13.2221L5.24271 8.69427L1.48944 6.02786H6.20389L8 1.5Z" fill="url(#star-fill-75)" stroke="#FFB800" stroke-width="1" stroke-linejoin="round"/>
+</svg>
